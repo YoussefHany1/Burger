@@ -1,0 +1,96 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --back: #080C15;
+}
+body{
+    background-color: var(--back) !important;
+}
+.parnet{
+    height: 100vh;
+}
+.left{
+    margin: 0 90px;
+    width: 539px;
+    /* height: 582px; */
+    gap: 10px;
+    & .txt{
+        /* font-size: 64px; */
+        font-weight: 800;
+        width: 553px;
+        & span{
+            color: #CD292A;
+        }
+    }
+    .pics{
+        height: 104px;
+        & img{
+            margin: -15px
+        }
+    }
+    & .btn{
+        background-color: #CD292A;
+        width: 280px;
+        height: 66px;
+        font-size: 22px;
+        transition-duration: 0.2s;
+        margin-bottom: 30px !important;
+        &:hover{
+            background-color: #f89801;
+        }
+    }
+}
+.brguer{
+    width: 48%;
+}
+/* .list{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    width: 64%;
+    margin: auto;
+    position: relative;
+    bottom: 117px;
+    & div{
+        background-image: linear-gradient(to right, #ffffff6b, transparent);
+        border-radius: 43px;
+        width: 360px;
+        height: 65px;
+        align-content: center;
+        font-weight: 600;
+        font-size: 24px;
+        padding: 0 20px;
+        backdrop-filter: blur(10px);
+    }
+} */
+
+
+/* 
+@large (min-width: 992px)
+
+@mediam (min-width: 768px)
+
+@small (min-width: 576px)
+
+*/
+@media (min-width: 0px), (max-width: 992px) {
+    .left .txt{
+        font-size: 56px;
+        padding: 10px;
+    }
+    .left p{
+        padding: 10px;
+    }
+}
+@media (min-width: 991px){
+    .left .txt{
+        font-size: 62px;
+    }
+}
